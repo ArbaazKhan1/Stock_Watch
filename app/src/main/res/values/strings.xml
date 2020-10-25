@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HW3_Stock_Watch</string>
+
+    <string name="stocks_json">Stocks.json</string>
+</resources>

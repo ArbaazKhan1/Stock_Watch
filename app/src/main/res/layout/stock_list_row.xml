@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/symbolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Symbol"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/companyNameTextView"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CompanyName"
+        app:layout_constraintStart_toStartOf="@+id/symbolTextView"
+        app:layout_constraintTop_toBottomOf="@+id/symbolTextView" />
+
+    <TextView
+        android:id="@+id/latestPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="LatestPrice"
+        app:layout_constraintBaseline_toBaselineOf="@+id/symbolTextView"
+        app:layout_constraintEnd_toStartOf="@+id/changeTextView"
+        app:layout_constraintStart_toEndOf="@+id/symbolTextView" />
+
+    <TextView
+        android:id="@+id/changePerecntTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="ChangePerecnt"
+        app:layout_constraintBaseline_toBaselineOf="@+id/changeTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/changeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Change"
+        app:layout_constraintBaseline_toBaselineOf="@+id/latestPriceTextView"
+        app:layout_constraintEnd_toStartOf="@+id/changePerecntTextView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="100dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
