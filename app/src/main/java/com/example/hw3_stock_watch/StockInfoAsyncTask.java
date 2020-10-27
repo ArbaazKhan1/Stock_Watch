@@ -18,7 +18,7 @@ public class StockInfoAsyncTask extends AsyncTask<String,Void,String>{
     @SuppressLint("StaticFieldLeak")
     private MainActivity mainActivity;
     private static final String baseUrl = "https://cloud.iexapis.com/stable/stock/";
-    private String APIKey = "sk_52ffbb68486542aba037efe26042a5e5";
+    private String APIKey = "API_KEY";
 
 
     StockInfoAsyncTask(MainActivity mainActivity) {
